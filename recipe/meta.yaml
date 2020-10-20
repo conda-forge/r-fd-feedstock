@@ -51,23 +51,18 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=FD
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: FD is a package to compute different multidimensional FD indices. It implements a
     distance-based framework to measure FD that allows any number and type of functional
     traits, and can also consider species relative abundances. It also contains other
     useful tools for functional ecology.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
 
 # Package: FD
 # Type: Package
