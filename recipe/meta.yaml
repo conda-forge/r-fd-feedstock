@@ -1,4 +1,4 @@
-{% set version = "1.0-12.3" %}
+{% set version = "1.0-12.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FD_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FD/FD_{{ version }}.tar.gz
-  sha256: 6e3091f99e510260cc338b9808201bd753556b5bdc2ff79116750d1e6b237eee
+  sha256: 49a59baad86e264881fe1c4222852bc5163335f0385f0bdf9ba2c264ef474a95
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
